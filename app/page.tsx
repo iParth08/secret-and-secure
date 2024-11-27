@@ -12,7 +12,7 @@ export default function Home() {
       <div id="login&register">{/* login & register code */}</div>
       <Button
         onClick={() => {
-          router.push("pages/chatroom/abc");
+          router.push("chatroom/abc-group");
         }}
       >
         {" "}
