@@ -1,8 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import { toast } from "sonner";
 
 const SignUp = () => {
   const router = useRouter();
@@ -15,11 +17,12 @@ const SignUp = () => {
   const handleSignUp = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log(form);
+    toast("Sign up successful!");
     router.push("/");
   };
 
   return (
-    <section className="flex flex-col items-center gap-5">
+    <section className="flex flex-col items-center justify-center gap-5">
       <h2 className="text-3xl font-bold">Sign Up</h2>
       <div className="w-[400px]">
         <form action="post" className="flex flex-col gap-5">
@@ -49,6 +52,12 @@ const SignUp = () => {
           />
           <Button onClick={handleSignUp}>Sign Up</Button>
         </form>
+        <p className="text-sm text-muted-foreground mt-2 text-center">
+          Already have an account?{" "}
+          <Link href="/sign-in" className="text-blue-500">
+            Sign In
+          </Link>
+        </p>
       </div>
     </section>
   );

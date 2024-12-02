@@ -1,12 +1,19 @@
-import React from "react";
+"use client";
 
-const UserChatRoom = async ({
-  params,
-}: {
-  params: Promise<{ username: string }>;
-}) => {
-  const username = (await params).username;
-  return <div>UserChatRoom, {username}</div>;
+import React, { useEffect, useState } from "react";
+
+const PrivateLine = ({ params }: { params: Promise<{ username: string }> }) => {
+  const [id, setId] = useState("");
+
+  useEffect(() => {
+    const fetchId = async () => {
+      const data = await params;
+      setId(data.username);
+    };
+    fetchId();
+  }, [params]);
+
+  return <div>PrivateLine {id}</div>;
 };
 
-export default UserChatRoom;
+export default PrivateLine;

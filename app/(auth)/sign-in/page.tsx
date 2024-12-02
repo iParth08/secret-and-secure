@@ -1,8 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import { toast } from "sonner";
 
 const SignIn = () => {
   const router = useRouter();
@@ -14,7 +16,8 @@ const SignIn = () => {
   const handleSignIn = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log(form);
-    router.push("/");
+    toast("Sign up successful!");
+    router.push("/users/testUser"); //todo: change this
   };
 
   return (
@@ -40,6 +43,12 @@ const SignIn = () => {
           />
           <Button onClick={handleSignIn}>Sign In</Button>
         </form>
+        <p className="text-sm text-muted-foreground mt-2 text-center">
+          Don&apos;t have an account?{" "}
+          <Link href="/sign-up" className="text-blue-500">
+            Sign Up
+          </Link>
+        </p>
       </div>
     </section>
   );
