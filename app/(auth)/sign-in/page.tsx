@@ -11,7 +11,7 @@ const SignIn = () => {
     password: "",
   });
 
-  const handleSignIn = (e: any) => {
+  const handleSignIn = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log(form);
     router.push("/");

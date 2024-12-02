@@ -12,7 +12,7 @@ const SignUp = () => {
     password: "",
   });
 
-  const handleSignUp = (e: any) => {
+  const handleSignUp = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log(form);
     router.push("/");
