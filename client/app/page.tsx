@@ -2,8 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+
 export default function Home() {
   const router = useRouter();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-back-screen bg-cover bg-center relative">
       <section className="flex flex-col items-center gap-5 bg-dark bg-opacity-80 p-10">
