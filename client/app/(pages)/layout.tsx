@@ -4,7 +4,7 @@ import initSocket from "@/lib/socket";
 import React, { useEffect } from "react";
 import { Socket } from "socket.io-client";
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     // initiate socket
     let socket: Socket;
@@ -30,4 +30,4 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default layout;
+export default Layout;

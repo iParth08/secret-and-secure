@@ -25,7 +25,7 @@ const UserProfile = ({ params }: { params: Promise<{ id: string }> }) => {
       socket?.off("online-user");
       socket?.off("ping");
     };
-  }, []);
+  }, [params]);
 
   return <div>UserProfile {id}</div>;
 };
