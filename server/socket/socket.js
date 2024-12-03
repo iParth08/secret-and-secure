@@ -15,6 +15,10 @@ export const setUpSocket = (httpServer) => {
       console.log("User online: ", id);
     });
 
+    socket.on("ping", (place) => {
+      console.log("Pong from: ", place);
+    });
+
     socket.on("disconnect", () => {
       console.log("User disconnected");
     });
