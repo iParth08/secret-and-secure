@@ -8,7 +8,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <h3 className="text-3xl font-bold text-blue-500">Secret & Secure</h3>
         <p className="text-xl text-muted-foreground">
           Message your comrades,{" "}
-          <span className="font-bold text-green-400">confidentially.</span>
+          <span className="font-bold text-leaf-400">confidentially.</span>
         </p>
       </div>
 

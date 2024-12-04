@@ -76,4 +76,7 @@
    };
    ```
 
-2.
+### Issues
+
+- [x] Linting is the only problematic thing that I am not grasping yet.
+- [x] Socket Provider setup

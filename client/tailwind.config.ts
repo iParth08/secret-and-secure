@@ -13,8 +13,8 @@ export default {
         "back-screen": "url('/images/bg-home.jpg')",
       },
       colors: {
-        green: "#31E981",
-        yellow: "#E2C044",
+        leaf: "#31E981",
+        solar: "#E2C044",
         dark: "#191716",
         crimson: "#E94F37",
         grey: "#DBD9DB",

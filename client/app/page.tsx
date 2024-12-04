@@ -10,8 +10,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-back-screen bg-cover bg-center relative">
       <section className="flex flex-col items-center gap-5 bg-dark bg-opacity-80 p-10">
         <div className="flex flex-col items-center gap-5">
-          <h1 className="text-5xl font-bold text-green">Welcome, Client 👋</h1>
-          <p className="text-xl text-yellow">
+          <h1 className="text-5xl font-bold text-leaf">Welcome, Client 👋</h1>
+          <p className="text-xl text-solar">
             Message your comrades,{" "}
             <span className="font-bold">confidentially.</span>
           </p>
@@ -22,7 +22,7 @@ export default function Home() {
               router.push("/sign-in");
             }}
             variant="outline"
-            className="hover:bg-green hover:text-white"
+            className="hover:bg-leaf hover:text-white"
           >
             Dive In
           </Button>
