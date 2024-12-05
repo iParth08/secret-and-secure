@@ -14,6 +14,7 @@ import { getInitials } from "@/lib/specials";
 
 //! testing purpose only
 import { friends as filteredUsers, currentUser } from "@/lib/data";
+
 import Link from "next/link";
 import { Button } from "./ui/button";
 import {
@@ -24,12 +25,8 @@ import {
   CircleUserRound,
 } from "lucide-react";
 
-type Friend = {
-  userId: string;
-  name: string;
-  username: string;
-  avatar: string;
-};
+import { Friend } from "@/lib/types";
+
 const AddFriend = () => {
   const [friends, setFriends] = useState<Friend[]>([]);
   //   const [filteredUsers, setFilteredUsers] = useState<Friend[]>([]);
@@ -42,8 +39,12 @@ const AddFriend = () => {
     //todo: search and filter friends
   };
 
-  const handleAddFriend = (username: string) => {};
-  const handleRemoveFriend = (username: string) => {};
+  const handleAddFriend = (username: string) => {
+    //todo: add friend
+  };
+  const handleRemoveFriend = (username: string) => {
+    //todo: remove friend
+  };
 
   return (
     <div>
@@ -51,12 +52,12 @@ const AddFriend = () => {
         <DropdownMenuTrigger className="focus:outline-none">
           <div className="flex items-center gap-2 text-black text-sm font-semibold">
             <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarImage src={currentUser?.avatar} />
               <AvatarFallback>
                 {getInitials(currentUser?.name || "")}
               </AvatarFallback>
             </Avatar>
-            <span className="text-white">{currentUser?.name}</span>
+            <span className="text-dark text-lg">{currentUser?.name}</span>
           </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="mt-5 mr-5 border-4 border-zinc-900">
@@ -99,7 +100,7 @@ const AddFriend = () => {
                     className="hover:border-b-2 flex justify-between items-center gap-2 w-[300px] p-2"
                   >
                     <Avatar>
-                      <AvatarImage src="https://github.com/shadocn.png" />
+                      <AvatarImage src={user.avatar} />
                       <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
                     </Avatar>
 

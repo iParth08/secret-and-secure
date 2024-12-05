@@ -22,6 +22,7 @@ export const friends = [
     gender: "female",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 3,
   },
   {
     _id: "u03",
@@ -33,6 +34,7 @@ export const friends = [
     gender: "male",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 2,
   },
   {
     _id: "u04",
@@ -44,6 +46,7 @@ export const friends = [
     gender: "female",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 1,
   },
   {
     _id: "u05",
@@ -55,6 +58,7 @@ export const friends = [
     gender: "male",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 0,
   },
   {
     _id: "u06",
@@ -66,6 +70,7 @@ export const friends = [
     gender: "female",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 0,
   },
   {
     _id: "u07",
@@ -77,6 +82,7 @@ export const friends = [
     gender: "male",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 0,
   },
   {
     _id: "u08",
@@ -88,6 +94,7 @@ export const friends = [
     gender: "female",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 0,
   },
   {
     _id: "u09",
@@ -99,6 +106,7 @@ export const friends = [
     gender: "male",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 7,
   },
   {
     _id: "u10",
@@ -110,6 +118,7 @@ export const friends = [
     gender: "female",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 6,
   },
   {
     _id: "u11",
@@ -121,6 +130,7 @@ export const friends = [
     gender: "male",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 5,
   },
   {
     _id: "u12",
@@ -132,6 +142,7 @@ export const friends = [
     gender: "female",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 4,
   },
   {
     _id: "u13",
@@ -143,6 +154,7 @@ export const friends = [
     gender: "male",
     status: "active",
     bio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    msgCount: 3,
   },
 ];
 

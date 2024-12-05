@@ -80,3 +80,4 @@
 
 - [x] Linting is the only problematic thing that I am not grasping yet.
 - [x] Socket Provider setup
+- [ ] [Collapsible](https://youtu.be/fIR3isyFV8s?si=HDLZ1bV7Stx-4H0C)

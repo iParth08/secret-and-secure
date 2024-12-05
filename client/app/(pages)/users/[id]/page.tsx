@@ -1,5 +1,6 @@
 "use client";
 
+import Sidebar from "@/components/Sidebar";
 import { socket } from "@/lib/socket";
 import React, { useEffect, useState } from "react";
 
@@ -27,7 +28,12 @@ const UserProfile = ({ params }: { params: Promise<{ id: string }> }) => {
     };
   }, [params]);
 
-  return <div>UserProfile {id}</div>;
+  return (
+    <div className="flex w-full min-h-fit gap-5">
+      <Sidebar />
+      <div>UserProfile {id}</div>
+    </div>
+  );
 };
 
 export default UserProfile;

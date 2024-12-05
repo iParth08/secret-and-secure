@@ -6,3 +6,7 @@ export const getInitials = (name: string) => {
   }
   return initials;
 };
+
+//filter function
+
+//sort by updates
